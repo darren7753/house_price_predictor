@@ -1,0 +1,5 @@
+numpy==1.24.3
+pandas==1.5.3
+streamlit==1.30.0
+st-gsheets-connection==0.0.3
+streamlit-option-menu==0.3.12
