@@ -1,4 +1,3 @@
-# Libraries
 import numpy as np
 import pandas as pd
 import streamlit as st
@@ -45,7 +44,6 @@ st.markdown("<h1 style='text-align: center; margin-bottom: 20px;'>House Price Pr
 page_option = option_menu(
     menu_title=None,
     options=["Input", "House Data"],
-    # icons=["house-fill", "1-square-fill", "2-square-fill"],
     orientation="horizontal"
 )
 
@@ -86,4 +84,4 @@ else:
         st.warning("There hasn't been any data available yet.")
     else:
         df_updated = df_updated.dropna()
-        st.dataframe(df_updated)
+        st.dataframe(df_updated, use_container_width=True)
